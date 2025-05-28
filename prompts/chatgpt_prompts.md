@@ -37,3 +37,41 @@ Resposta chatgpt:
      2. Site que mais vendeu
 
 
+Prompt 3: vou enviar o meu arquivo ipynb e gostaria que você otimizasse meu código e me ajudasse a resolver esses desafios 
+
+             Consolidar todas as bases de terceiros para realizar uma análise
+             Transformar dados de vendasem informações relevantes para a fabricante
+             Quais são os produtos mais populares em cada país
+             Como otimizar o processo de transporte e logística até o momento da venda
+
+Resposta chatgpt: 
+
+    Seu notebook já está bem estruturado, consolidando as bases de dados e começando a análise. Vamos otimizar e expandir o código para resolver os desafios propostos:
+
+            1. 🔄 Consolidar todas as bases de terceiros
+
+                Você já faz isso com: df_total = pd.concat(dataframes, ignore_index=True)
+
+            ✅ Ótimo! Só otimizaremos a formatação de datas (sem precisar formatar como string, melhor deixar como datetime).
+
+            2. 📊 Transformar dados de vendas em informações relevantes
+                Vamos extrair:
+                
+                Receita total por produto
+                
+                Receita total por país
+                
+                Receita média por origem (Etsy, AliExpress...)
+                
+            3. 🌍 Produtos mais populares em cada país
+              Agrupamos por país e produto.
+            
+            4. 🚚 Como otimizar transporte e logística até a venda
+            Usamos:
+            
+                Análise de tempo entre pedido e entrega (se tiver colunas como order_date, delivery_date)
+                
+                Volume de vendas por país/origem para ajudar a decidir centros de distribuição            
+
+                    
+        
